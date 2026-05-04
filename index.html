@@ -527,7 +527,7 @@ function startTimer() {
   clearInterval(ringInterval);
   const circumference = 565;
 
-  // ring resets every hour visually
+  // ring resets every hour visually 
   timerInterval = setInterval(() => {
     if (!stateStart) return;
     const elapsed = Date.now() - stateStart;
