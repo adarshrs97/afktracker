@@ -488,19 +488,19 @@ function updateBtn() {
   btn.className = '';
   if (state === 'in') {
     btn.classList.add('state-in');
-    icon.textContent = '🟢';
+    icon.textContent = '';
     label.textContent = "I'm Here";
     liveLabel.textContent = "IN OFFICE";
     ring.style.stroke = 'var(--green)';
   } else if (state === 'afk') {
     btn.classList.add('state-afk');
-    icon.textContent = '🔴';
+    icon.textContent = '';
     label.textContent = 'AFK';
     liveLabel.textContent = "AWAY FROM KEYBOARD";
     ring.style.stroke = 'var(--red)';
   } else {
     btn.classList.add('state-idle');
-    icon.textContent = '⚪';
+    icon.textContent = '';
     label.textContent = 'Start';
     liveLabel.textContent = "WAITING TO START";
     ring.style.stroke = 'transparent';
